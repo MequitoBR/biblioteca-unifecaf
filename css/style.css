@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background-color: #0b2545;
+    color: #ffffff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #134074;
+    background: #ffffff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.logo span {
+    display: block;
+    font-size: 0.8rem;
+    color: #eeeff1;
+    margin-top: 2px;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #8da9c4;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0b2545 0%, #134074 100%);
+    color: #ffffff;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    color: #eeeff1;
+}
+
+.btn-primary {
+    background-color: #8da9c4;
+    color: #0b2545;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    color: #0b2545;
+    margin-bottom: 0.5rem;
+}
+
+.section-title p {
+    color: #666;
+}
+
+.about-grid, .books-grid, .units-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.about-card, .book-card, .unit-card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.about-card {
+    padding: 2rem;
+    border-top: 4px solid #134074;
+}
+
+.about-card h3 {
+    color: #0b2545;
+    margin-bottom: 1rem;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-img-placeholder {
+    background-color: #cbd4c2;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b2545;
+    font-weight: 650;
+}
+
+.book-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    background-color: #eeeff1;
+    color: #134074;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.book-info h3 {
+    font-size: 1.1rem;
+    color: #0b2545;
+    margin-bottom: 0.5rem;
+}
+
+.author {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.btn-secondary {
+    border: 2px solid #134074;
+    color: #134074;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.btn-secondary:hover {
+    background-color: #134074;
+    color: #ffffff;
+}
+
+.unit-card {
+    padding: 2rem;
+    border-left: 4px solid #8da9c4;
+}
+
+.unit-card h3 {
+    color: #0b2545;
+    margin-bottom: 0.8rem;
+}
+
+.footer {
+    background-color: #0b2545;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-menu ul {
+        justify-content: center;
+        gap: 1rem;
+    }
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+}
